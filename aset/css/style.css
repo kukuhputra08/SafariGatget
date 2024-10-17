@@ -358,9 +358,9 @@ header i {
 }
 
 #searchResults {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 #searchResults .gambar-fauna {
@@ -562,5 +562,16 @@ header i {
         align-items: center;
     }
 
+    #searchResults {
+        /* margin-top: 20px; */
+        display: flex;
+        /* gap: 20px; */
+    }
+
+    #searchResults .gambar-fauna {
+        width: 80%;
+        background-color: #333;
+        /* Adjust width as necessary */
+    }
 
 }
