@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(135, 174, 62);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #8BC34A;
+}
+
+header {
+    border-bottom: 1px solid whitesmoke;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+header nav a {
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+header nav a:hover {
+    color: burlywood;
+}
+
+header nav a::after {
+    content: ' ';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid burlywood;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+header nav a:hover::after {
+    transform: scale(0.5);
+}
+
+header i {
+    color: whitesmoke;
+    margin: 0.3rem;
+    font-size: 3rem;
+}
+
+#humberger-menu {
+    display: none;
+}
+
+.home-section {
+    width: 100%;
+    height: 95vh;
+    /* background-color: azure; */
+    background-image: url(/aset/img/DALL·E\ 2024-10-16\ 17.49.25\ -\ A\ friendly\ background\ for\ a\ website\ featuring\ a\ safari\ scene\ with\ flora\ and\ fauna.\ The\ design\ uses\ earthy\ colors\ like\ cream\,\ tan\,\ and\ shades\ of\ green\ .webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.home-section .search {
+    /* position: inherit; */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    margin-top: 180px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.search .logo-cari {
+    padding: 10px;
+}
+
+.search .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.search .title h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+.search .title h1 span {
+    color: green;
+}
+
+.search .title p {
+    color: rgb(255, 255, 255);
+}
+
+.search .cari {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cari i {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.cari input {
+    color: snow;
+    width: 500px;
+    padding: 10px 50px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    height: 50px;
+    border-radius: 20px;
+
+    .cari input:focus {
+        border-color: #8BC34A;
+    }
+}
+
+
+
+.search .tombol-cari {
+    margin: 20px;
+    background-color: #8BC34A;
+    padding: 10px;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.search .tombol-cari a {
+    align-items: center;
+    display: flex;
+    color: antiquewhite;
+}
+
+.deskripsi {
+    background-color: #626F47;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.deskripsi .judul {
+    width: 1600px;
+    height: 350px;
+    /* background-color: antiquewhite; */
+}
+
+.deskripsi .judul h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: whitesmoke;
+    padding: 20px;
+    /* margin-bottom: ; */
+}
+
+.deskripsi .judul h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.deskripsi .judul h1 span {
+    color: transparent;
+    background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHQ3dGhvYTZuZjcxZW45M25jZjNqODNtMThxaWlzMHlmcG1vaDBneiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2yyK4NsH4urNrdUQAh/giphy.gif') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 5rem;
+    font-family: "Permanent Marker", cursive;
+}
+
+.deskripsi .judul p {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    padding: 20px;
+    font-style: italic;
+}
+
+.deskripsi .judul p span {
+    color: transparent;
+    background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHQ3dGhvYTZuZjcxZW45M25jZjNqODNtMThxaWlzMHlmcG1vaDBneiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2yyK4NsH4urNrdUQAh/giphy.gif') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "Permanent Marker", cursive;
+}
+
+.fauna {
+    background-color: beige;
+    width: 100%;
+}
+
+.fauna .content-fauna {
+    padding: 20px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.fauna .content-fauna::-webkit-scrollbar {
+    display: none;
+}
+
+.gambar-fauna {
+    background-color: #626F47;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: 350px;
+    color: whitesmoke;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.gambar-fauna:hover {
+    transform: scale(1.1);
+}
+
+.gambar-fauna h1 span {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.gambar-fauna a {
+    color: whitesmoke;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: orange;
+    transition: 0.3s ease-in-out;
+}
+
+.gambar-fauna a:hover {
+    background-color: rgb(161, 113, 23);
+}
+
+.gambar-fauna img {
+    border-radius: 16px;
+}
+
+/* flora */
+.flora {
+    background-color: rgb(101, 63, 14);
+    width: 100%;
+}
+
+.flora .content-flora {
+    padding: 20px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.flora .content-flora::-webkit-scrollbar {
+    display: none;
+}
+
+.gambar-flora {
+    background-color: beige;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: 350px;
+    color: #626F47;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.gambar-flora:hover {
+    transform: scale(1.1);
+}
+
+.gambar-flora h1 span {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.gambar-flora a {
+    color: whitesmoke;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: orange;
+    transition: 0.3s ease-in-out;
+}
+
+.gambar-flora a:hover {
+    background-color: rgb(161, 113, 23);
+}
+
+.gambar-flora img {
+    border-radius: 16px;
+}
+
+#searchResults {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#searchResults .gambar-fauna {
+    width: 500px;
+    background-color: #333;
+    /* Adjust width as necessary */
+}
+
+/* popUp */
+.popup {
+    display: none;
+    /* Pop-up disembunyikan secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Background transparan hitam */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: beige;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.popup-content img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.kategori {
+    text-align: left;
+}
+
+.kategori h4 {
+    display: inline-block;
+    margin-right: 10px;
+    /* Jarak antar elemen */
+    font-size: 16px;
+    margin: 0;
+}
+
+.kategori h4 span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.open-popup {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.open-popup:hover {
+    background-color: #0056b3;
+}
+
+
+.footer {
+    background-color: #626F47;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 10px;
+    color: whitesmoke;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.footer p span {
+    font-weight: 700;
+}
+
+
+
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+
+    .home-section {
+        padding: 1rem 5%;
+    }
+
+    .deskripsi .judul {
+        width: 70%;
+    }
+
+    .home-section .search {
+        width: 75%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+
+    #cari-icon {
+        position: absolute;
+        display: none;
+    }
+
+    .home-section .search .cari {
+        width: 40%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .deskripsi .judul {
+        width: 60%;
+    }
+
+    #humberger-menu {
+        display: inline-block;
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid whitesmoke;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(30px);
+        width: 30rem;
+        height: 100vh;
+        transition: right 0.3s ease;
+    }
+
+
+    header nav.active {
+        right: 0;
+    }
+
+    header nav a {
+        display: block;
+        margin: 1.5rem;
+        border-bottom: 1px solid var(--warna1);
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    header nav a::after {
+        transform: 0 0;
+    }
+
+    header nav a:hover::after {
+        transform: scale(0.2);
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 46%;
+    }
+
+    .home-section .search {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/aset/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/aset/img/logo2.webp">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Petualangan Satwa</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="/aset/img/logo2.webp" alt="Logo" width="100px" height="100px">
+        </div>
+
+        <i class='bx bx-food-menu' id="humberger-menu"></i>
+
+        <nav id="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#fauna">Fauna</a>
+            <a href="#flora">Flora</a>
+        </nav>
+
+    </header>
+
+    <section id="home" class="home-section">
+        <audio id="backsound" autoplay loop>
+            <source src="/aset/backsound.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="search">
+
+            <div class="logo-cari">
+                <img src="/aset/img/logo2.webp" alt="" width="100px" height="100px">
+            </div>
+
+            <div class="title">
+                <h1>CARI <span>FLORA</span> FAUNA</h1>
+                <P>Cari Hewan Yang Anda Inginkan, Jika Tidak Ada Belum Di Upload.
+            </div>
+
+            <form id="formSearch" class="cari">
+                <i class='bx bx-search-alt-2' id="cari-icon"></i>
+                <input type="text" placeholder="Cari....." id="searchInput">
+            </form>
+
+            <div class="tombol-cari">
+                <a href="#" id="searchButton">Cari</a>
+            </div>
+
+            <div id="searchResults"></div> <!-- Container to display search results -->
+
+
+        </div>
+
+    </section>
+
+    <section class="deskripsi" id="about">
+        <div class="judul">
+            <h3>Hai... Advanture</h3>
+            <h1>Selamat datang di <span>Taman Safari Gadget</span></h1>
+            <p>
+                Kami akan menyediakan sebuah media bagi anda untuk berlibur <span>Taman Safari Gadget</span> tentunya
+                dengan media ini, anda akan dibawa untuk menjelajah <span>Flora dan Fauna</span>. Jadi jangan lewatkan
+                dan bacalah sebelum menyentuhnya, tetap jaga kesehatan dan sukses selalau.
+            </p>
+        </div>
+    </section>
+
+    <section class="hewan">
+        <!-- untuk fauna -->
+        <div class="fauna" id="fauna">
+
+            <div class="content-fauna">
+
+                <div class="gambar-fauna" data-name="singa">
+                    <h1>Singa <span>(Panthera Leo)</span></h1>
+                    <img src="/aset/img/Fauna/singa.jpg" alt="" width="200px" height="140px">
+                    <a href="#popup-singa" class="open-popup" data-popup="popup-singa">Baca Selengkapnya</a>
+                </div>
+
+                <div class="gambar-fauna" data-name="elang">
+                    <h1>Elang <span>Haliaeetus leucocephalus</span></h1>
+                    <img src="/aset/img/Fauna/elang.jpg" alt="" width="200px" height="140px">
+
+                    <a href="#popup-elang" class="open-popup" data-popup="popup-elang">Baca Selengkapnya</a>
+                </div>
+
+                <div class="gambar-fauna" data-name="Gajah">
+                    <h1>Gajah <span>Elephas maximus</span></h1>
+                    <img src="/aset/img/Fauna/gajah.png" alt="" width="200px" height="140px">
+
+                    <a href="#popup-gajah" class="open-popup" data-popup="popup-gajah">Baca Selengkapnya</a>
+                </div>
+
+                <div class="gambar-fauna" data-name="kanguru">
+                    <h1>Kanguru <span>Macropus Rufus</span></h1>
+                    <img src="/aset/img/Fauna/kanguru.jpg" alt="" width="200px" height="140px">
+
+                    <a href="#popup-kanguru" class="open-popup" data-popup="popup-kanguru">Baca Selengkapnya</a>
+                </div>
+
+                <div class="gambar-fauna" data-name="harimau">
+                    <h1>Harimau <span>Panthera Tigris</span></h1>
+                    <img src="/aset/img/Fauna/harimau.jpeg" alt="" width="200px" height="140px">
+
+                    <a href="#popup-harimau" class="open-popup" data-popup="popup-harimau">Baca Selengkapnya</a>
+                </div>
+
+                <div class="gambar-fauna" data-name="harimau">
+                    <h1>Kura-kura Galápagos <span>Chelonoidis nigra</span></h1>
+                    <img src="/aset/img/Fauna/kura kura galapagos.jpeg" alt="" width="200px" height="140px">
+
+                    <a href="#popup-galapagos" class="open-popup" data-popup="popup-galapagos">Baca Selengkapnya</a>
+                </div>
+
+                <div class="gambar-fauna" data-name="komodo">
+                    <h1>Komodo <span>Varanus komodoensis</span></h1>
+                    <img src="/aset/img/Fauna/komodo-adalah.jpg" alt="" width="200px" height="140px">
+
+                    <a href="#popup-komodo" class="open-popup" data-popup="popup-komodo">Baca Selengkapnya</a>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- PopUp Penjelasan Fauna -->
+
+            <div id="popup-singa" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Singa (Panthera leo)</h2>
+                    <img src="/aset/img/Fauna/singa.jpg" alt="Singa">
+                    <p>Singa adalah kucing besar yang sebagian besar ditemukan di Afrika sub-Sahara. Mereka
+                        mendiami
+                        berbagai ekosistem, termasuk sabana, padang rumput, hutan terbuka, dan semak belukar.
+                        Selain
+                        singa
+                        Afrika, ada juga populasi singa Asia yang kecil dan terisolasi yang mendiami Taman
+                        Nasional
+                        Gir
+                        di
+                        India.
+
+                        Singa jantan dewasa biasanya memiliki berat 120 hingga 190 kilogram (260 hingga 420 pon)
+                        dan
+                        tinggi
+                        sekitar 1,2 hingga 1,4 meter (4 hingga 4,5 kaki) di bahu, sedangkan singa betina dewasa
+                        sedikit
+                        lebih kecil. Singa memiliki bulu berwarna cokelat keemasan dengan ekor berumbai, dan
+                        singa
+                        jantan
+                        sering kali memiliki surai dengan warna yang bervariasi, dari pirang hingga cokelat tua
+                        atau
+                        hitam.
+                        Singa betina, yang disebut singa betina, tidak memiliki surai.
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Padang rumput dan sabana di Afrika.</span></h4>
+                        <h4>Makanan : <span> Karnivora, biasanya memangsa rusa, zebra, dan kerbau.</span></h4>
+                        <h4>Ciri Unik : <span> Singa jantan memiliki surai yang tebal dan dikenal sebagai "Raja
+                                Hutan."</span>
+                        </h4>
+                        <h4>Fakta Menarik : <span> Singa adalah satu-satunya kucing besar yang hidup dalam
+                                kelompok,
+                                disebut
+                                kebanggaan.</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-elang" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Singa (Panthera leo)</h2>
+                    <img src="/aset/img/Fauna/elang.jpg" alt="Singa">
+                    <p>
+                        Elang Botak (Haliaeetus leucocephalus) adalah burung pemangsa yang terdapat di Amerika
+                        Utara. Elang botak merupakan burung nasional dan simbol Amerika Serikat.[1] Elang ini
+                        sesungguhnya tidaklah botak (bald), tetapi penyematan kata "bald" pada burung ini dalam
+                        bahasa Inggris karena dahulunya kata tersebut juga dapat diartikan "kepala yang berwarna
+                        putih".
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Daerah dekat perairan di Amerika Utara.</span></h4>
+                        <h4>Makanan : <span> Ikan, burung, dan mamalia kecil.</span></h4>
+                        <h4>Ciri Unik : <span> Kepala putih yang kontras dengan tubuh cokelat.</span>
+                        </h4>
+                        <h4>Fakta Menarik : <span> Elang botak adalah simbol nasional Amerika Serikat.</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-gajah" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Singa (Panthera leo)</h2>
+                    <img src="/aset/img/Fauna/gajah.png" alt="Singa">
+                    <p>
+                        Gajah adalah hewan darat terbesar yang tergolong sebagai mamalia. Hewan ini hidup dengan
+                        kelompok kecil yang dipimpin oleh betina yang berumur senior. Sementara, kebanyakan jantan
+                        muda hidup dalam kawanan yang terpisah dari para betina senior.
+                        Mengutip dari ensiklopedia Britannica, mamalia berukuran besar itu bisa hidup sampai umur 80
+                        tahun atau lebih di penangkaran, tetapi hanya bisa hidup sampai usia 60 tahun di alam liar.
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Hutan tropis dan sabana di Asia dan Afrika.</span></h4>
+                        <h4>Makanan : <span> Herbivora, makan daun, rumput, buah, dan kulit pohon.</span></h4>
+                        <h4>Ciri Unik : <span> Gajah memiliki telinga besar dan belalai yang sangat
+                                fleksibel.</span>
+                        </h4>
+                        <h4>Fakta Menarik : <span> Gajah dapat mengenali dirinya sendiri di cermin, menunjukkan
+                                tingkat kesadaran diri yang tinggi.</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-kanguru" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Singa (Panthera leo)</h2>
+                    <img src="/aset/img/Fauna/kanguru.jpg" alt="Singa">
+                    <p>
+                        Kanguru adalah hewan berkantung dari keluarga Macropodidae (makropoda, artinya “kaki
+                        besar”). Dalam penggunaan umum istilah ini digunakan untuk menggambarkan spesies terbesar
+                        dari keluarga ini, kanguru merah , serta kanguru antilopine , kanguru kelabu timur , dan
+                        kanguru kelabu barat. Kanguru berasal dari Australia dan Papua. Pemerintah Australia
+                        memperkirakan terdapat 42,8 juta kanguru yang hidup di kawasan pemanenan komersial Australia
+                        pada tahun 2019, turun dari 53,2 juta pada tahun 2013. Kata kanguru diambil dari bahasa
+                        Aborigin gangguru.[
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Dataran terbuka dan hutan di Australia.</span></h4>
+                        <h4>Makanan : <span> Herbivora, makan rumput dan tumbuhan.</span></h4>
+                        <h4>Ciri Unik : <span> Kaki belakang yang kuat dan kantung untuk menggendong anak.</span>
+                        </h4>
+                        <h4>Fakta Menarik : <span> Kanguru dapat melompat sejauh 9 meter dalam satu lompatan.</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-harimau" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Singa (Panthera leo)</h2>
+                    <img src="/aset/img/Fauna/harimau.jpeg" alt="Singa">
+                    <p>
+                        Harimau (Panthera tigris) adalah spesies kucing terbesar yang masih hidup dari genus
+                        Panthera. Harimau memiliki ciri loreng yang khas pada bulunya, berupa garis-garis vertikal
+                        gelap pada bulu oranye, dengan bulu bagian bawah berwarna putih. Harimau adalah pemangsa
+                        puncak, mereka terutama memangsa ungulata seperti kijang dan babi celeng. Harimau adalah
+                        hewan teritorial dan umumnya merupakan pemangsa soliter yang penyendiri, tetapi tetap
+                        memiliki sisi sosial. Mereka tetap tinggal di area-area yang berdekatan, untuk mendukung
+                        kebutuhan makanan dan membesarkan keturunannya. Anak harimau tinggal bersama ibu mereka
+                        selama sekitar dua tahun, kemudian akan hidup mandiri dan meninggalkan daerah jelajah ibu
+                        mereka untuk membangun rumah mereka sendiri.
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Hutan hujan dan rawa-rawa di Asia.</span></h4>
+                        <h4>Makanan : <span> Karnivora, memangsa rusa, babi hutan, dan hewan besar lainnya.</span>
+                        </h4>
+                        <h4>Ciri Unik : <span>Memiliki garis-garis hitam di tubuhnya yang unik bagi setiap
+                                individu.</span>
+                        </h4>
+                        <h4>Fakta Menarik : <span> Harimau adalah perenang yang handal dan suka berada di dekat
+                                air.</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-galapagos" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Singa (Panthera leo)</h2>
+                    <img src="/aset/img/Fauna/kura kura galapagos.jpeg" alt="Singa">
+                    <p>
+                        Kura-kura galapagos adalah hewan asli di tujuh Kepulauan Galapagos, suatu kepulauan vulkanik
+                        sekitar 1.000 km (620 mi) di sebelah barat daratan Ekuador. Dengan usia harapan hidup di
+                        alam liar lebih dari 100 tahun, ini adalah salah satu vertebrata yang paling lama masa
+                        hidupnya. Individu yang tertangkap hidup setidaknya 170 tahun.
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Kepulauan Galápagos, Ekuador.</span></h4>
+                        <h4>Makanan : <span> Herbivora, makan rerumputan dan kaktus.</span></h4>
+                        <h4>Ciri Unik : <span> Kura-kura darat terbesar di dunia.</span>
+                        </h4>
+                        <h4>Fakta Menarik : <span> Kura-kura Galápagos bisa hidup lebih dari 100 tahun.</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div id="popup-komodo" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Singa (Panthera leo)</h2>
+                    <img src="/aset/img/Fauna/komodo-adalah.jpg" alt="Singa">
+                    <p>
+                        Komodo merupakan hewan endemik asli Indonesia yang tidak bisa ditemukan di negara lain.
+                        Komodo atau yang memiliki nama Varanus Komodoensis berada di Pulau Komodo, Rinca, Flores,
+                        Gili Motang, dan Gili Dasami di Provinsi Nusa Tenggara Timur, NTT.
+
+                        Sampai sekarang, komodo masih menjadi hewan yang paling dicari oleh para wisatawan yang
+                        berasal dari berbagai daerah maupun dari belahan dunia lain. Maka dari itu, eksistensi
+                        komodo ini perlu dijaga dengan baik.
+
+                        Meski demikian, masih banyak orang yang belum mengenal dengan baik hewan komodo ini. Hewan
+                        komodo memiliki ciri-ciri, makanan dan habitat yang unik dan perlu untuk diketahui lebih
+                        lanjut. Simak ulasannya sebagai berikut.
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Pulau Komodo, Indonesia.</span></h4>
+                        <h4>Makanan : <span> Karnivora, memakan daging, termasuk bangkai.</span></h4>
+                        <h4>Ciri Unik : <span> Kadal terbesar di dunia dengan gigi tajam dan air liur
+                                berbakteri.</span>
+                        </h4>
+                        <h4>Fakta Menarik : <span> Komodo dapat mendeteksi mangsa dari jarak hingga 4 km dengan
+                                indra penciumannya.</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- PopUp Penjelasan Fauna END-->
+
+
+
+            <!-- flora -->
+            <div class="flora" id="flora">
+                <div class="content-flora">
+                    <div class="gambar-flora">
+                        <h1>Bunga Raflesia <span>Rafflesia arnoldii</span></h1>
+                        <img src="/aset/img/Flora/bangkai.jpg" alt="" width="200px" height="140px">
+
+                        <a href="#popup-raflesia" class="open-popup" data-popup="popup-raflesia">Baca Selengkapnya</a>
+                    </div>
+
+                    <div class="gambar-flora">
+                        <h1> Pohon Eukaliptus <span>Eucalyptus spp.</span></h1>
+                        <img src="/aset/img/Flora/eukalipus.jpeg" alt="" width="200px" height="140px">
+
+                        <a href="#popup-eukalipus" class="open-popup" data-popup="popup-eukalipus">Baca Selengkapnya</a>
+                    </div>
+
+                    <div class="gambar-flora">
+                        <h1> Pohon Akasia <span>Acacia spp.</span></h1>
+                        <img src="/aset/img/Flora/akasia.jpg" alt="" width="200px" height="140px">
+
+                        <a href="#popup-akasia" class="open-popup" data-popup="popup-akasia">Baca Selengkapnya</a>
+                    </div>
+
+                    <div class="gambar-flora">
+                        <h1>Pohon Baobab <span>Adansonia spp.</span></h1>
+                        <img src="/aset/img/Flora/baobab.jpg" alt="" width="200px" height="140px">
+
+                        <a href="#popup-baobab" class="open-popup" data-popup="popup-baobab">Baca Selengkapnya</a>
+                    </div>
+
+                    <div class="gambar-flora">
+                        <h1> Kaktus <span>Cactaceae</span></h1>
+                        <img src="/aset/img/Flora/kaktus.png" alt="" width="200px" height="140px">
+
+                        <a href="#popup-kaktus" class="open-popup" data-popup="popup-kaktus">Baca Selengkapnya</a>
+                    </div>
+                    <div class="gambar-flora">
+                        <h1>Bunga Matahari <span>Helianthus annuus</span></h1>
+                        <img src="/aset/img/Flora/matahari.jpg" alt="" width="200px" height="140px">
+
+                        <a href="#popup-matahari" class="open-popup" data-popup="popup-matahari">Baca Selengkapnya</a>
+                    </div>
+                    <div class="gambar-flora">
+                        <h1>Paku-Paku <span>Pteridophyta</span></h1>
+                        <img src="/aset/img/Flora/paku.jpeg" alt="" width="200px" height="140px">
+
+                        <a href="#popup-paku" class="open-popup" data-popup="popup-paku">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PopUp Penjelasan flora -->
+
+            <div id="popup-raflesia" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Bunga Raflesia (Rafflesia arnoldii)</h2>
+                    <img src="/aset/img/Flora/bangkai.jpg" alt="Singa">
+                    <p>
+                        Rafflesia atau puspa nusa adalah sebuah genus tumbuhan berbunga yang semua spesiesnya hidup
+                        sebagai parasit. Anatomi tumbuhan pada Rafflesia tidak lengkap. Organ tubuh dari Rafflesia
+                        hanya berbentuk bunga yang mekar atau kuncup saja. Rafflesia tidak memiliki bagian daun, batang,
+                        dan akar. Sebagai ganti dari tidak adanya akar, Rafflesia memiliki suatu jaringan bernama
+                        haustorium yang mampu menyerap nutrisi hasil fotosintesis dari jaringan tumbuhan inangnya.
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Hutan hujan tropis di Indonesia.</span></h4>
+                        <h4>Karakteristik : <span> Dikenal sebagai bunga terbesar di dunia, memiliki aroma yang kuat
+                                mirip bau bangkai untuk menarik serangga.</span></h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-eukalipus" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Pohon Eukaliptus (Eucalyptus spp.)</h2>
+                    <img src="/aset/img/Flora/eukalipus.jpeg" alt="Singa">
+                    <p>
+                        Eucalyptus adalah salah satu jenis pohon yang daun dan minyaknya sejak lama dimanfaatkan untuk
+                        berbagai tujuan. Tanaman ini merupakan genus untuk lebih dari 660 spesies semak dan pohon tinggi
+                        keluarga myrtle.
+                        Disebutkan dalam ensiklopedia Britannica, secara ekonomis, pohon eukaliptus juga salah satu
+                        kelompok yang paling berharga dalam ordo Myrtales. Banyak spesies darinya yang dibudidayakan
+                        secara luas di berbagai belahan dunia dan dimanfaatkan sebagai pohon peneduh atau ditanam di
+                        hutan tanaman.
+
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span>Hutan di Australia dan daerah tropis lainnya.</span></h4>
+                        <h4>Karakteristik : <span>Daunnya kaya akan minyak esensial, menjadi makanan utama bagi panda
+                                koala.</span></h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-akasia" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Pohon Akasia (Acacia spp.)</h2>
+                    <img src="/aset/img/Flora/akasia.jpg" alt="Singa">
+                    <p>
+                        Akasia adalah pohon besar berbunga yang tumbuh mencapai ketinggain 30 meter. Pohon ini
+                        memiliki batang bebas cabang lurus yang panjangnya mencapai lebih dari setengah total tinggi
+                        pohon.
+
+                        Pohon akasia muda memiliki kulit batang mulus dan berwarna kehijauan. Setelah memasuki umur 2-3
+                        tahun, akan muncul celah-celah pada kulit pohon. Pada pohon yang telah tua, kulit batang akan
+                        bertekstur kasar, keras, bercelah dekat pangkal dan warnanya berubah menjadi cokelat atau
+                        cokelat tua.
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Umum ditemukan di padang rumput dan hutan tropis.</span></h4>
+                        <h4>Karakteristik : <span> Memiliki daun kecil dan bunga berwarna kuning, sering menjadi sumber
+                                makanan bagi hewan herbivora seperti kanguru.</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-baobab" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Pohon Baobab (Adansonia spp.)</h2>
+                    <img src="/aset/img/Flora/baobab.jpg" alt="Singa">
+                    <p>
+                        Pohon Baobab Afrika atau disebut juga Adansonia digitata adalah salah satu jenis pohon tertua
+                        dan terbesar dari keluarga Angiospermae. Nama Adansonia sendiri diambil dari nama seorang
+                        pecinta alam dan penjelajah dari Prancis yang berhasil menemukan pohon tersebut, yaitu Michael
+                        Adason. Pohon Baobab ini umumnya bisa ditemukan di hutan dengan semak berduri yang terletak di
+                        dataran rendah dengan musim kemarau 4-10 bulan pertahun.
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Dataran terbuka di Afrika.</span></h4>
+                        <h4>Karakteristik : <span> Memiliki batang besar yang menyimpan air, sering menjadi tempat
+                                berteduh bagi berbagai hewan.</span></h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-kaktus" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Kaktus (Cactaceae)</h2>
+                    <img src="/aset/img/Flora/kaktus.png" alt="Singa">
+                    <p>
+                        Kaktus merupakan tanaman yang memiliki aneka bentuk dan ukuran. Keberadaannya semakin menyita
+                        pandangan saat batang kaktus dihiasi bunga yang beraneka warna. Nilai lebih yang jarang dimiliki
+                        tanaman lain, kaktus merupakan tanaman sukulen, dengan ciri-ciri mampu menyimpan dan menyebut
+                        air sebagai cadangan.
+
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Gurun dan daerah kering.</span></h4>
+                        <h4>Karakteristik : <span> Memiliki kemampuan menyimpan air, memberikan habitat dan makanan bagi
+                                hewan seperti burung dan reptil.</span>
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-matahari" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Bunga Matahari (Helianthus annuus)</h2>
+                    <img src="/aset/img/Flora/matahari.jpg" alt="Singa">
+                    <p>
+                        Bunga matahari (Helianthus annuus L.) adalah tumbuhan semusim dari suku kenikir-kenikiran
+                        (Asteraceae) yang populer, baik sebagai tanaman hias maupun tanaman penghasil minyak. Bunga
+                        tanaman ini sangat khas: besar, biasanya berwarna kuning terang, dengan kepala bunga yang besar
+                        (diameter bisa mencapai 30 cm).[2] Bunga ini sebetulnya adalah bunga majemuk, tersusun dari
+                        ratusan hingga ribuan bunga kecil pada satu bongkol. Bunga Matahari juga memiliki perilaku khas,
+                        yaitu bunganya selalu menghadap / condong ke arah matahari atau heliotropisme. Orang Prancis
+                        menyebutnya tournesol atau "pengelana Matahari". Namun, sifat ini disingkirkan pada berbagai
+                        kultivar baru untuk produksi minyak karena memakan banyak energi dan mengurangi hasil.
+
+                        Bunga matahari merupakan bunga nasional Ukraina dan bunga resmi negara bagian Kansas, Amerika
+                        Serikat.
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Padang terbuka dan area pertanian.</span></h4>
+                        <h4>Karakteristik : <span> Bunga besar yang menarik serangga penyerbuk dan burung.</span></h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup-paku" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Paku-Paku (Pteridophyta)</h2>
+                    <img src="/aset/img/Flora/paku.jpeg" alt="Singa">
+                    <p>
+                        Tumbuhan paku, paku-pakuan, atau pakis-pakisan adalah sekelompok tumbuhan dengan sistem pembuluh
+                        sejati (Tracheophyta) tetapi tidak pernah menghasilkan biji untuk reproduksi seksualnya.
+                        Alih-alih biji, kelompok tumbuhan ini melepaskan spora sebagai alat penyebarluasan dan
+                        perbanyakannya, menyerupai kelompok organisme seperti lumut dan fungi.
+
+                    </p>
+                    <p>-------------------------</p>
+                    <div class="kategori">
+                        <h4>Habitat : <span> Hutan, tepi sungai, dan daerah lembap.</span></h4>
+                        <h4>Karakteristik : <span> Menyediakan tempat berlindung bagi berbagai hewan kecil dan
+                                serangga.</span></h4>
+
+                    </div>
+                </div>
+            </div>
+            <!-- PopUp Penjelasan flora END-->
+    </section>
+
+    <footer class="footer">
+        <p>Tugas Kuliah Pemograman Web, Departemen Teknik Informatika ITS 2024</p>
+        <p>5025231191, Kukuh Putra Purwnegara || <span>Dosen : Imam Kuswardayan, S.Kom, M.T</span></p>
+    </footer>
+
+    <!-- Script  -->
+    <script src="/aset/js/script.js"></script>
+</body>
+
+</html>
